@@ -1,0 +1,38 @@
+HTTrack3.49-2+libhtsjava.so.2 launched on Thu, 08 Dec 2022 23:21:09 at https://laravel.spruko.com/dashfox/ltr/index +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/*
+(webhttrack -q -%i -w https://laravel.spruko.com/dashfox/ltr/index -O "/home/code237/Documents/GitHub/templates/template4" -n -%P -N0 -s2 -p7 -D -a -K0 -c4 -%k -A25000 -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -%s -%u )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+23:29:21	Error: 	"Not Found" (404) at link https://laravel.spruko.com/dashfox/ltr/.multi-collapse (from https://laravel.spruko.com/dashfox/ltr/collapse)
+23:29:21	Error: 	"Not Found" (404) at link https://laravel.spruko.com/dashfox/ltr/profile.html (from https://laravel.spruko.com/dashfox/ltr/blog)
+23:29:21	Error: 	"Not Found" (404) at link https://laravel.spruko.com/dashfox/ltr/page-signup (from https://laravel.spruko.com/dashfox/ltr/signin)
+23:31:17	Warning: 	HTML file (96256 bytes) retransferred due to lack of cache: https://laravel.spruko.com/dashfox/ltr/vertical
+23:31:18	Warning: 	HTML file (93597 bytes) retransferred due to lack of cache: https://laravel.spruko.com/dashfox/ltr/horizontal
+23:31:22	Warning: 	Retry after error -4 (No data (connection closed)) at link https://laravel.spruko.com/dashfox/ltr/assets/img/faces/3.jpg (from https://laravel.spruko.com/dashfox/ltr/widgets)
+23:31:55	Error: 	"Not Found" (404) at link https://laravel.spruko.com/dashfox/ltr/assets/js/eva-icons.min.js (from https://laravel.spruko.com/dashfox/ltr/table-basic)
+23:32:01	Error: 	"Not Found" (404) at link https://laravel.spruko.com/dashfox/ltr/assets/img/media/7.jpg (from https://laravel.spruko.com/dashfox/ltr/thumbnails)
+23:32:15	Error: 	"Not Found" (404) at link https://laravel.spruko.com/dashfox/ltr/assets/plugins/spectrum-colorpicker/spectrum.js (from https://laravel.spruko.com/dashfox/ltr/form-elements-sizes)
+23:32:24	Error: 	"Not Found" (404) at link https://laravel.spruko.com/dashfox/ltr/twitter.com/spruko.me (from https://laravel.spruko.com/dashfox/ltr/editprofile)
+23:42:42	Error: 	"Not Found" (404) at link https://laravel.spruko.com/dashfox/ltr/assets/plugins/owl-carousel/owl.video.play.png (from https://laravel.spruko.com/dashfox/ltr/assets/plugins/owl-carousel/owl.carousel.css)
+23:42:42	Error: 	"Not Found" (404) at link https://laravel.spruko.com/dashfox/ltr/assets/switcher/images/media/bg.jpg (from https://laravel.spruko.com/dashfox/ltr/assets/switcher/demo.css)
+23:42:42	Error: 	"Not Found" (404) at link https://laravel.spruko.com/dashfox/ltr/assets/plugins/darggable/images/ui-icons_444444_256x240.png (from https://laravel.spruko.com/dashfox/ltr/assets/plugins/darggable/jquery-ui-darggable.css)
+23:42:42	Error: 	"Not Found" (404) at link https://laravel.spruko.com/dashfox/ltr/assets/plugins/darggable/images/ui-icons_555555_256x240.png (from https://laravel.spruko.com/dashfox/ltr/assets/plugins/darggable/jquery-ui-darggable.css)
+23:42:42	Error: 	"Not Found" (404) at link https://laravel.spruko.com/dashfox/ltr/assets/plugins/darggable/images/ui-icons_ffffff_256x240.png (from https://laravel.spruko.com/dashfox/ltr/assets/plugins/darggable/jquery-ui-darggable.css)
+23:42:42	Error: 	"Not Found" (404) at link https://laravel.spruko.com/dashfox/ltr/assets/plugins/darggable/images/ui-icons_777620_256x240.png (from https://laravel.spruko.com/dashfox/ltr/assets/plugins/darggable/jquery-ui-darggable.css)
+23:42:42	Error: 	"Not Found" (404) at link https://laravel.spruko.com/dashfox/ltr/assets/plugins/darggable/images/ui-icons_cc0000_256x240.png (from https://laravel.spruko.com/dashfox/ltr/assets/plugins/darggable/jquery-ui-darggable.css)
+23:42:42	Error: 	"Not Found" (404) at link https://laravel.spruko.com/dashfox/ltr/assets/plugins/darggable/images/ui-icons_777777_256x240.png (from https://laravel.spruko.com/dashfox/ltr/assets/plugins/darggable/jquery-ui-darggable.css)
+23:42:42	Error: 	"Not Found" (404) at link https://laravel.spruko.com/dashfox/ltr/assets/plugins/custom-scroll/mCSB_buttons.png (from https://laravel.spruko.com/dashfox/ltr/assets/plugins/custom-scroll/jquery.mCustomScrollbar.css)
+23:42:42	Error: 	"Not Found" (404) at link https://laravel.spruko.com/dashfox/ltr/assets/plugins/img/vimeo-play.png (from https://laravel.spruko.com/dashfox/ltr/assets/plugins/gallery/gallery.css)
+23:42:42	Error: 	"Not Found" (404) at link https://laravel.spruko.com/dashfox/ltr/assets/plugins/img/video-play.png (from https://laravel.spruko.com/dashfox/ltr/assets/plugins/gallery/gallery.css)
+23:42:42	Error: 	"Not Found" (404) at link https://laravel.spruko.com/dashfox/ltr/assets/plugins/img/youtube-play.png (from https://laravel.spruko.com/dashfox/ltr/assets/plugins/gallery/gallery.css)
+23:42:43	Error: 	"Not Found" (404) at link https://laravel.spruko.com/dashfox/ltr/assets/plugins/materialdesignicons/fonts/materialdesignicons/materialdesignicons-webfont.woff?v=2.0.46 (from https://laravel.spruko.com/dashfox/ltr/assets/plugins/materialdesignicons/materialdesignicons.css)
+23:42:43	Error: 	"Not Found" (404) at link https://laravel.spruko.com/dashfox/ltr/assets/plugins/materialdesignicons/fonts/materialdesignicons/materialdesignicons-webfont.ttf?v=2.0.46 (from https://laravel.spruko.com/dashfox/ltr/assets/plugins/materialdesignicons/materialdesignicons.css)
+23:42:43	Error: 	"Not Found" (404) at link https://laravel.spruko.com/dashfox/ltr/assets/plugins/materialdesignicons/fonts/materialdesignicons/materialdesignicons-webfont.svg?v=2.0.46 (from https://laravel.spruko.com/dashfox/ltr/assets/plugins/materialdesignicons/materialdesignicons.css)
+23:42:45	Error: 	"Not Found" (404) at link https://laravel.spruko.com/dashfox/ltr/assets/plugins/simple-line-icons/fonts/simple-line-icons/Simple-Line-Icons.eot?v=2.4.0 (from https://laravel.spruko.com/dashfox/ltr/assets/plugins/simple-line-icons/simple-line-icons.css)
+23:42:45	Error: 	"Not Found" (404) at link https://laravel.spruko.com/dashfox/ltr/assets/plugins/simple-line-icons/fonts/simple-line-icons/Simple-Line-Icons.svg?v=2.4.0 (from https://laravel.spruko.com/dashfox/ltr/assets/plugins/simple-line-icons/simple-line-icons.css)
+
+HTTrack Website Copier/3.49-2 mirror complete in 21 minutes 36 seconds : 1072 links scanned, 1048 files written (41199351 bytes overall) [34652186 bytes received at 26737 bytes/sec], 8220107 bytes transferred using HTTP compression in 133 files, ratio 12%, 7.9 requests per connection
+(24 errors, 3 warnings, 0 messages)

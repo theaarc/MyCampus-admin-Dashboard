@@ -1,0 +1,104 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"rel="nofollow" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="HTTrack is an easy-to-use website mirror utility. It allows you to download a World Wide website from the Internet to a local directory,building recursively all structures, getting html, images, and other files from the server to your computer. Links are rebuiltrelatively so that you can freely browse to the local site (works with any browser). You can mirror several sites together so that you can jump from one toanother. You can, also, update an existing mirror site, or resume an interrupted download. The robot is fully configurable, with an integrated help" />
+	<meta name="keywords" content="httrack, HTTRACK, HTTrack, winhttrack, WINHTTRACK, WinHTTrack, offline browser, web mirror utility, aspirateur web, surf offline, web capture, www mirror utility, browse offline, local  site builder, website mirroring, aspirateur www, internet grabber, capture de site web, internet tool, hors connexion, unix, dos, windows 95, windows 98, solaris, ibm580, AIX 4.0, HTS, HTGet, web aspirator, web aspirateur, libre, GPL, GNU, free software" />
+    <link rel="stylesheet" href="login.css">
+
+    <script>
+        // function ajaxPOST() {
+        //     var data = new FormData();
+
+        //     let email = document.getElementById("email");
+        //     let password = document.getElementById("password");
+
+        //     data.append("email", email);
+        //     data.append("password", password);
+
+        //     console.log(data.toString());
+            
+        //     // (A2) AJAX
+        //     var xhr = new XMLHttpRequest();
+        //     xhr.open("POST", "http://127.0.0.1:5000/api/users/login");
+        //     // xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        //     xhr.onload = function () {
+        //         console.log(this.response);
+        //     };
+        //     xhr.send(data);
+        // }
+
+        function ajaxPOST() {
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", "http://127.0.0.1:5000/api/users/login");
+            xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+
+            let email = document.getElementById("email");
+            let password = document.getElementById("password");
+
+            var data = new FormData();
+
+                data.append("email", email);
+                data.append("password", password);
+
+                console.log(data);
+
+                const body = JSON.stringify(data);
+
+            xhr.onload = () => {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                        var response = JSON.parse(xhr.responseText);
+                        console.log(response);
+                } else {
+                    console.log(`Error: ${xhr.status}`);
+                }
+            };
+            xhr.send(data);
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-2"></div>
+            <div class="col-lg-6 col-md-8 login-box">
+                <div class="col-lg-12 login-key">
+                    <i class="fa fa-key" aria-hidden="true"></i>
+                </div>
+                <div class="col-lg-12 login-title">
+                    ADMIN PANEL
+                </div>
+
+                <div class="col-lg-12 login-form">
+                    <div class="col-lg-12 login-form">
+                        <!-- <form method="post" action=""> -->
+                            <div class="form-group">
+                                <label class="form-control-label">EMAIL OR USERNAME</label>
+                                <input name="email" id="email" type="text" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-control-label">PASSWORD</label>
+                                <input name="password" id="password" type="password" class="form-control" required i>
+                            </div>
+
+                            <div class="col-lg-12 loginbttm">
+                                <div class="col-lg-6 login-btm login-text">
+                                    <!-- Error Message -->
+                                </div>
+                                <div class="col-lg-6 login-btm login-button">
+                                    <button type="submit" class="btn btn-outline-primary" onclick="ajaxPOST()">LOGIN</button>
+                                </div>
+                            </div>
+                        <!-- </form> -->
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-2"></div>
+            </div>
+        </div>
+</body>
+</html>
+
+
+
