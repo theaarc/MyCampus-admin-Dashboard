@@ -14,7 +14,14 @@
 
         <!-- Title -->
 		<title> Admin Dashboard </title>
-        
+
+		<!-- ***********************************test data****************************** -->
+			<script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-core.min.js"></script>
+			<script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-pie.min.js"></script>
+
+			<script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
+        <!-- ***********************************test data****************************** -->
+
         <!-- Favicon -->
 		<link rel="icon" href="../laravel.spruko.com/dashfox/ltr/assets/img/brand/favicon.png" type="image/x-icon"/>
 
@@ -38,15 +45,18 @@
 		<link id="theme" href="../laravel.spruko.com/dashfox/ltr/assets/css/colors/color.css" rel="stylesheet">
 
 		
-		<!--  Owl-carousel css-->
+		 <!-- Owl-carousel css
 		<link href="../laravel.spruko.com/dashfox/ltr/assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet" />
 
-		<!-- Maps css -->
+		 Maps css 
 		<link href="../laravel.spruko.com/dashfox/ltr/assets/plugins/jqvmap/jqvmap.min.css" rel="stylesheet">
 
-		<!-- Jvectormap css -->
+		 Jvectormap css 
         <link href="../laravel.spruko.com/dashfox/ltr/assets/plugins/jqvmap/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
+ -->
 
+		<!-- Internal Morris Css-->
+		<link href="../laravel.spruko.com/dashfox/ltr/assets/plugins/morris.js/morris.css" rel="stylesheet">
 
 		<!---Skinmodes css-->
 		<link href="../laravel.spruko.com/dashfox/ltr/assets/css/skin-modes.css" rel="stylesheet" />
@@ -63,114 +73,7 @@
     <body  class="main-body light-theme app sidebar-mini active leftmenu-color">
         
         <!-- Start Switcher -->
-		 <!-- <div class="switcher-wrapper ">
-			<div class="demo_changer">
-				<div class="demo-icon">
-					<a class="bg-primary-transparent active" title="Themes"><i class="fa fa-cog fa-spin text-primary"></i></a>
-				</div>
-				<div class="form_holder sidebar-right1">
-					<div class="tabs-menu">
-						<ul class="nav panel-tabs">
-							<li><a class="active" title="Themes" href="#switcher1" data-toggle="tab"><i class="fe fe-droplet mr-1"></i> Themes</a></li>
-						</ul>
-					</div>
-					<div class="tab-content">
-						<div class="tab-pane active" id="switcher1">
-							<div class="row">
-								<div class="predefined_styles">
-									<div class="swichermainleft border-top  mt-2 text-center">
-										<div class="p-3">
-											<a href="sidemenuHome.html" class="btn btn-primary btn-block mt-0">LTR VERSION</a>
-											<a href="https://laravel.spruko.com/dashfox/rtl/index" class="btn btn-success btn-block ">RTL VERSION</a>
-										</div>
-									</div>
-									<div class="swichermainleft border-top  mt-2 text-center">
-										<div class="p-3">
-											<a href="https://laravel.spruko.com/dashfox" class="btn btn-primary btn-block mt-0">View Demo</a>
-											<a href="https://themeforest.net/item/dashfox-dashboard-html-template/28122999" class="btn btn-secondary btn-block">Buy Now</a>
-											<a href="https://themeforest.net/user/sprukosoft/portfolio" class="btn btn-success btn-block">Our Portfolio</a>
-										</div>
-									</div>
-									<div class="swichermainleft">
-										<h4>Body Skins</h4>
-										<div class="switch_section">
-											<div class="switch-toggle d-flex">
-												<span class="mr-auto">Default Body</span>
-												<div class="onoffswitch2"><input type="radio" name="onoffswitch" id="myonoffswitch7" class="onoffswitch2-checkbox" checked>
-													<label for="myonoffswitch7" class="onoffswitch2-label"></label>
-												</div>
-											</div>
-											<div class="switch-toggle d-flex">
-												<span class="mr-auto">Body Style1</span>
-												<div class="onoffswitch2"><input type="radio" name="onoffswitch" id="myonoffswitch6" class="onoffswitch2-checkbox">
-													<label for="myonoffswitch6" class="onoffswitch2-label"></label>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="swichermainleft">
-										<h4>Leftmenu Styles</h4>
-										<div class="switch_section">
-											<div class="switch-toggle horizontal-light-switcher d-flex">
-												<span class="mr-auto">Leftmenu Light</span>
-												<div class="onoffswitch2"><input type="radio" name="onoffswitch3" id="myonoffswitch9" class="onoffswitch2-checkbox">
-													<label for="myonoffswitch9" class="onoffswitch2-label"></label>
-												</div>
-											</div>
-											<div class="switch-toggle d-flex">
-												<span class="mr-auto">Leftmenu Color</span>
-												<div class="onoffswitch2"><input type="radio" name="onoffswitch3" id="myonoffswitch10" class="onoffswitch2-checkbox" checked>
-													<label for="myonoffswitch10" class="onoffswitch2-label"></label>
-												</div>
-											</div>
-											<div class="switch-toggle horizontal-Dark-switcher d-flex">
-												<span class="mr-auto">Leftmenu Dark</span>
-												<div class="onoffswitch2"><input type="radio" name="onoffswitch3" id="myonoffswitch11" class="onoffswitch2-checkbox">
-													<label for="myonoffswitch11" class="onoffswitch2-label"></label>
-												</div>
-											</div>
-											<div class="switch-toggle d-flex">
-												<span class="mr-auto">Reset Leftmenu Styles</span>
-												<div class="onoffswitch2"><input type="radio" name="onoffswitch3" id="myonoffswitch13" class="onoffswitch2-checkbox">
-													<label for="myonoffswitch13" class="onoffswitch2-label"></label>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="swichermainleft">
-										<h4>Color Skins</h4>
-										<div class="skin-body">
-											<a class="wscolorcode1 blackborder color1" data-theme="https://laravel.spruko.com/dashfox/ltr/assets/css/colors/color.css" href="#"></a>
-											<a class="wscolorcode1 blackborder color2" data-theme="https://laravel.spruko.com/dashfox/ltr/assets/css/colors/color2.css" href="#"></a>
-											<a class="wscolorcode1 blackborder color3" data-theme="https://laravel.spruko.com/dashfox/ltr/assets/css/colors/color3.css" href="#"></a>
-											<a class="wscolorcode1 blackborder color4" data-theme="https://laravel.spruko.com/dashfox/ltr/assets/css/colors/color4.css" href="#"></a>
-											<a class="wscolorcode1 blackborder color5" data-theme="https://laravel.spruko.com/dashfox/ltr/assets/css/colors/color5.css" href="#"></a>
-											<a class="wscolorcode1 blackborder color6" data-theme="https://laravel.spruko.com/dashfox/ltr/assets/css/colors/color6.css" href="#"></a>
-										</div>
-									</div>
-									<div class="swichermainleft">
-										<h4>Skin Modes</h4>
-										<div class="skin-body light-pattern">
-											<a class="" href = "#"><img class="theme-image1 mb-3" id="myonoffswitchimg1" src="../laravel.spruko.com/dashfox/ltr/assets/switcher/images/themes/1.jpg" alt="img"></a>
-											<a class="" href = "#"><img class="theme-image1 mb-3" id="myonoffswitchimg2" src="../laravel.spruko.com/dashfox/ltr/assets/switcher/images/themes/2.jpg" alt="img"></a>
-										</div>
-									</div>
-									<div class="swichermainleft">
-										<h4>Navigation</h4>
-										<div class="skin-body light-pattern">
-											<p class="font-weight-semibold">Leftmenu Navigation</p>
-											<a class="" href="vertical.html"><img class="theme-image1 mb-3" src="../laravel.spruko.com/dashfox/ltr/assets/switcher/images/themes/3.jpg" alt="img"></a>
-											<p class="font-weight-semibold mt-4">Horizontal Navigation</p>
-											<a class="" href="horizontal.html"><img class="theme-image1 mb-3" src="../laravel.spruko.com/dashfox/ltr/assets/switcher/images/themes/1.jpg" alt="img"></a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div> -->
+
 		<!-- End Switcher -->
 
         <!-- Loader -->
@@ -378,11 +281,260 @@
 			   </div>
 			   <!-- Container closed  -->
    
-			   <!-- les donnees a ajouter -->
+			   <!-- ************************************* les donnees a ajouter ********************************************-->
 			   <div>
-					 <h1 class="mg-l-30">Voici la page d'annonce</h1>
+					<!-- Statistic -->
+					<div class="container-fluid mg-t-20 ht-15p">
+							<h1 class="mg-l-30">Voici la page d'annonce</h1>
+								<!-- row -->
+								<div class="row row-sm">
+									<div class="col-md-3 col-lg-5">
+										<div class="card mg-b-20">
+											<div class="card-body">
+												<div class="main-content-label mg-b-5">
+													Statistic sur les types d'annonce
+												</div>
+												<div class="ht-200 ht-sm-200" id="typeannonce"></div>
+											</div>
+										</div>
+									</div><!-- col-6 -->
+									<div class="col-md-3 col-lg-5">
+										<div class="card mg-b-20">
+											<div class="card-body">
+												<div class="main-content-label mg-b-5">
+													Statistic General sur les annonces
+												</div>
+												<div class="ht-200 ht-sm-200" id="genannonce"></div>
+											</div>
+										</div>
+									</div><!-- col-6 -->
+								</div>
+								<!-- /row -->
+
+								<!-- ***********************************Used data for pie chart ****************************** -->
+									<script>
+										/************************** this data shall be gotten dynamically from the database *********************/
+										var typedata = [{'x': 'communiquer', y: 40},{'x': 'emploi temps', y: 50},{'x': 'convocation', y: 10},];
+										var gendata = [{'x': 'valider', y: 45},{'x': 'en attente', y: 15},{'x': 'renvoyer', y: 40}];
+										/************************** this data shall be gotten dynamically from the database *********************/
+
+										var pietype = new ej.charts.AccumulationChart({
+											//Series type
+											series: [
+												{
+												
+													radius: '60%',
+													
+													dataSource : typedata,
+													dataLabel: {
+														visible: false,
+													},
+													xName: 'x',
+													yName: 'y'
+												}
+											],
+										});
+										pietype.appendTo('#typeannonce');
+
+										var pieGen = new ej.charts.AccumulationChart({
+											//Series general
+											series: [
+												{
+													radius: '60%',
+
+													dataSource : gendata,
+													dataLabel: {
+														visible: false,
+													},
+													xName: 'x',
+													yName: 'y'
+												}
+											],
+										});
+										pieGen.appendTo('#genannonce');
+									</script>
+								<!-- ***********************************test data****************************** -->
+
+					</div>
+					<!-- Statistic End -->
+
+					<!-- annonce -->
+					<div class="container-fluid mg-t-20 ht-85p">
+						<div class="row row-sm">
+							<div class="col-md-12 col-lg-4">
+								<div class="card">
+									<div class="card-body">
+										<div class="d-flex flex-row justify-content-between mg-b-20">
+											<div class="d-flex flex-row justify-content-between">
+												<div class="main-img-user"><img alt="" src="../laravel.spruko.com/dashfox/ltr/assets/img/faces/6.jpg"></div>
+												<div class="mg-l-20">
+													<div class="card-text">nom</div>
+													<div class="card-text">poste description</div>
+												</div>
+											</div>
+											<div><i class="fas fa-light fa-eye"></i></div>
+										</div>
+										<div class="d-flex flex-row justify-content-between mg-b-20">
+											<p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+												Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+												when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+												It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+												It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+												and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+										</div>
+										<div class="d-flex flex-row justify-content-between mg-b-20">
+											2 files attached
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-12 col-lg-4">
+								<div class="card">
+									<div class="card-body">
+										<div class="d-flex flex-row justify-content-between mg-b-20">
+											<div class="d-flex flex-row justify-content-between">
+												<div class="main-img-user"><img alt="" src="../laravel.spruko.com/dashfox/ltr/assets/img/faces/6.jpg"></div>
+												<div class="mg-l-20">
+													<div class="card-text">nom</div>
+													<div class="card-text">poste description</div>
+												</div>
+											</div>
+											<div><i class="fas fa-light fa-eye"></i></div>
+										</div>
+										<div class="d-flex flex-row justify-content-between mg-b-20">
+											<p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+												Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+												when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+												It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+												It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+												and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+										</div>
+										<div class="d-flex flex-row justify-content-between mg-b-20">
+											2 files attached
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-12 col-lg-4">
+								<div class="card">
+									<div class="card-body">
+										<div class="d-flex flex-row justify-content-between mg-b-20">
+											<div class="d-flex flex-row justify-content-between">
+												<div class="main-img-user"><img alt="" src="../laravel.spruko.com/dashfox/ltr/assets/img/faces/6.jpg"></div>
+												<div class="mg-l-20">
+													<div class="card-text">nom</div>
+													<div class="card-text">poste description</div>
+												</div>
+											</div>
+											<div><i class="fas fa-light fa-eye"></i></div>
+										</div>
+										<div class="d-flex flex-row justify-content-between mg-b-20">
+											<p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+												Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+												when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+												It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+												It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+												and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+										</div>
+										<div class="d-flex flex-row justify-content-between mg-b-20">
+											2 files attached
+										</div>
+									</div>
+								</div>
+							</div>
+					   </div>
+
+					   <div class="row row-sm">
+							<div class="col-md-12 col-lg-4">
+								<div class="card">
+									<div class="card-body">
+										<div class="d-flex flex-row justify-content-between mg-b-20">
+											<div class="d-flex flex-row justify-content-between">
+												<div class="main-img-user"><img alt="" src="../laravel.spruko.com/dashfox/ltr/assets/img/faces/6.jpg"></div>
+												<div class="mg-l-20">
+													<div class="card-text">nom</div>
+													<div class="card-text">poste description</div>
+												</div>
+											</div>
+											<div><i class="fas fa-light fa-eye"></i></div>
+										</div>
+										<div class="d-flex flex-row justify-content-between mg-b-20">
+											<p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+												Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+												when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+												It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+												It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+												and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+										</div>
+										<div class="d-flex flex-row justify-content-between mg-b-20">
+											2 files attached
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-12 col-lg-4">
+								<div class="card">
+									<div class="card-body">
+										<div class="d-flex flex-row justify-content-between mg-b-20">
+											<div class="d-flex flex-row justify-content-between">
+												<div class="main-img-user"><img alt="" src="../laravel.spruko.com/dashfox/ltr/assets/img/faces/6.jpg"></div>
+												<div class="mg-l-20">
+													<div class="card-text">nom</div>
+													<div class="card-text">poste description</div>
+												</div>
+											</div>
+											<div><i class="fas fa-light fa-eye"></i></div>
+										</div>
+										<div class="d-flex flex-row justify-content-between mg-b-20">
+											<p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+												Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+												when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+												It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+												It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+												and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+										</div>
+										<div class="d-flex flex-row justify-content-between mg-b-20">
+											2 files attached
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-12 col-lg-4">
+								<div class="card">
+									<div class="card-body">
+										<div class="d-flex flex-row justify-content-between mg-b-20">
+											<div class="d-flex flex-row justify-content-between">
+												<div class="main-img-user"><img alt="" src="../laravel.spruko.com/dashfox/ltr/assets/img/faces/6.jpg"></div>
+												<div class="mg-l-20">
+													<div class="card-text">nom</div>
+													<div class="card-text">poste description</div>
+												</div>
+											</div>
+											<div><i class="fas fa-light fa-eye"></i></div>
+										</div>
+										<div class="d-flex flex-row justify-content-between mg-b-20">
+											<p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+												Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+												when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+												It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+												It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+												and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+										</div>
+										<div class="d-flex flex-row justify-content-between mg-b-20">
+											2 files attached
+										</div>
+									</div>
+								</div>
+							</div>
+				   	   </div>
+					</div>
+					<!-- annonce END -->
 			   </div>
-			   <!-- les donnees a ajouter -->
+			   <!--******************************************** les donnees a ajouter*************************************** -->
    
 		   </div>
 		   <!-- main-content closed -->   
@@ -426,35 +578,26 @@
 		<!-- eva-icons js -->
 		<script src="../laravel.spruko.com/dashfox/ltr/assets/plugins/eva-icons/eva-icons.min.js"></script>
 
-		
-		<!--Internal  Chart.bundle js -->
-		<script src="../laravel.spruko.com/dashfox/ltr/assets/plugins/chart.js/Chart.bundle.min.js"></script>
+		<!--Internal  Datepicker js -->
+		<script src="../laravel.spruko.com/dashfox/ltr/assets/plugins/jquery-ui/ui/widgets/datepicker.js"></script>
 
-		<!--Internal Sparkline js -->
-		<script src="../laravel.spruko.com/dashfox/ltr/assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
-
-		<!-- Moment js -->
-		<script src="../laravel.spruko.com/dashfox/ltr/assets/plugins/raphael/raphael.min.js"></script>
-
-		<!--Internal  Flot js-->
+		<!-- Internal Flot js -->
 		<script src="../laravel.spruko.com/dashfox/ltr/assets/plugins/jquery.flot/jquery.flot.js"></script>
 		<script src="../laravel.spruko.com/dashfox/ltr/assets/plugins/jquery.flot/jquery.flot.pie.js"></script>
 		<script src="../laravel.spruko.com/dashfox/ltr/assets/plugins/jquery.flot/jquery.flot.resize.js"></script>
-		<script src="../laravel.spruko.com/dashfox/ltr/assets/plugins/jquery.flot/jquery.flot.categories.js"></script>
-		<script src="../laravel.spruko.com/dashfox/ltr/assets/js/dashboard.sampledata.js"></script>
-		<script src="../laravel.spruko.com/dashfox/ltr/assets/js/chart.flot.sampledata.js"></script>
 
-		<!-- Chart-circle js -->
-		<script src="../laravel.spruko.com/dashfox/ltr/assets/plugins/circle-progress/circle-progress.min.js"></script>
-		<script src="../laravel.spruko.com/dashfox/ltr/assets/plugins/chart-circle/chart-circle.js"></script>
-
-		<!-- ECharts js-->
-		<script src="../laravel.spruko.com/dashfox/ltr/assets/plugins/echart/echart.js"></script>
-
-		<!--Internal  index js -->
-		<script src="../laravel.spruko.com/dashfox/ltr/assets/plugins/apexcharts/apexcharts.js"></script>
-		<script src="../laravel.spruko.com/dashfox/ltr/assets/js/index.js"></script>
-
+		<!-- Internal Select2 js-->
+		<script src="../laravel.spruko.com/dashfox/ltr/assets/plugins/select2/js/select2.min.js"></script>
+		
+		<!--Internal  Morris js -->
+		<script src="../laravel.spruko.com/dashfox/ltr/assets/plugins/raphael/raphael.min.js"></script>
+		<script src="../laravel.spruko.com/dashfox/ltr/assets/plugins/morris.js/morris.min.js"></script>
+		
+		<!--Internal Chart Morris js -->
+		<script src="../laravel.spruko.com/dashfox/ltr/assets/js/chart.morris.js"></script>
+		
+		<!-- Internal Chart flot js -->
+		<script src="../laravel.spruko.com/dashfox/ltr/assets/js/chart.flot.js"></script>
 
 		<!-- custom js -->
 		<script src="../laravel.spruko.com/dashfox/ltr/assets/js/custom.js"></script>
